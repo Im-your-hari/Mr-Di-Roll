@@ -30,6 +30,16 @@ class MyPage(BoxLayout):
         print(a)
         if a==1:
             self.image.source = ('./images/dice-six-faces-one.png')
+        elif a==2:
+            self.image.source = ('./images/dice-six-faces-two.png')
+        elif a==3:
+            self.image.source = ('./images/dice-six-faces-three.png')
+        elif a==4:
+            self.image.source = ('./images/dice-six-faces-four.png')
+        elif a==5:
+            self.image.source = ('./images/dice-six-faces-five.png')
+        else:
+            self.image.source = ('./images/dice-six-faces-six.png')
 
 class MrDiRoll(App):
     def build(self):
