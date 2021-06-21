@@ -27,7 +27,6 @@ class MyPage(BoxLayout):
     def roll(self,instace):
         #Need to add dice logic
         a = random.choice([1,2,3,4,5,6])
-        print(a)
         if a==1:
             self.image.source = ('./images/dice-six-faces-one.png')
         elif a==2:
