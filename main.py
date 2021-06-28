@@ -6,10 +6,8 @@ from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.image import Image
 from kivy.core.window import Window
-try:
-    from pygame import mixer
-except:
-    pass
+from playsound import playsound
+
 
 
 class MyPage(BoxLayout):
@@ -32,16 +30,22 @@ class MyPage(BoxLayout):
         a = random.choice([1,2,3,4,5,6])
         if a==1:
             self.image.source = ('./images/dice-six-faces-one.png')
+            playsound('./audios/one.mp3',True)
         elif a==2:
             self.image.source = ('./images/dice-six-faces-two.png')
+            playsound('./audios/two.mp3',True)
         elif a==3:
             self.image.source = ('./images/dice-six-faces-three.png')
+            playsound('./audios/three.mp3',True)
         elif a==4:
             self.image.source = ('./images/dice-six-faces-four.png')
+            playsound('./audios/four.mp3',True)
         elif a==5:
             self.image.source = ('./images/dice-six-faces-five.png')
+            playsound('./audios/five.mp3',True)
         else:
             self.image.source = ('./images/dice-six-faces-six.png')
+            playsound('./audios/six.mp3',True)
 
 class MrDiRoll(App):
     def build(self):
