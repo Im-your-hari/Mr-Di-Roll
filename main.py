@@ -6,9 +6,12 @@ from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.image import Image
 from kivy.core.window import Window
-'''
+try:
+    from pygame import mixer
+except:
+    pass
 
-'''
+
 class MyPage(BoxLayout):
     def __init__(self):
         super().__init__()
