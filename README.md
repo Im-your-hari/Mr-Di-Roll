@@ -1,2 +1,2 @@
-# Mr-Di-Roll
+# Mr-Di-Roll <img src="./images/icon.png" alt=" "/>
 Random is random always....! Hey there... This is just a Dice... LoL...! Made by python random module and gui by kivy....
